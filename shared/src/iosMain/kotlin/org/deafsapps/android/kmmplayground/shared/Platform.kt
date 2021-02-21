@@ -1,6 +1,5 @@
 package org.deafsapps.android.kmmplayground.shared
 
-
 import platform.UIKit.UIDevice
 
 actual class Platform actual constructor() {

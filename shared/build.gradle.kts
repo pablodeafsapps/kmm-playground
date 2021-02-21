@@ -84,6 +84,13 @@ android {
         }
     }
 }
+
+sqldelight {
+    database("AppDatabase") {
+        packageName = "org.deafsapps.android.kmmplayground.shared.cache"
+    }
+}
+
 val packForXcode by tasks.creating(Sync::class) {
     group = "build"
     val mode = System.getenv("CONFIGURATION") ?: "DEBUG"

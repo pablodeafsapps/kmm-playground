@@ -7,20 +7,20 @@ interface CharactersDataSource {
 
     interface Remote {
 
-        suspend fun getAllCharactersListResponse(): Result<CharactersDto?>
+        suspend fun getAllCharacters(): Result<CharactersDto?>
 
-        suspend fun getCharactersNextPage(page: Int): Result<CharactersDto?>
+        suspend fun getCharactersByPage(page: Int): Result<CharactersDto?>
     }
 }
 
-class RickAndMortyCharacterDataSource constructor(
+class RickAndMortyCharactersDataSource constructor(
 ) : CharactersDataSource.Remote {
 
-    override suspend fun getAllCharactersListResponse(): Result<CharactersDto?> {
+    override suspend fun getAllCharacters(): Result<CharactersDto?> {
         TODO("Not yet implemented")
     }
 
-    override suspend fun getCharactersNextPage(page: Int): Result<CharactersDto?> {
+    override suspend fun getCharactersByPage(page: Int): Result<CharactersDto?> {
         TODO("Not yet implemented")
     }
 }

@@ -1,10 +1,14 @@
 package org.deafsapps.kmm.kmmplayground.data.model
 
+import kotlinx.serialization.Serializable
+
+@Serializable
 data class CharactersDto(
 //    val info: InfoDto,
     val results: List<CharacterDto>
 )
 
+@Serializable
 data class CharacterDto(
     val id: Int,
     val name: String,
@@ -27,11 +31,13 @@ data class InfoDto(
     val prev: String
 )
 
+@Serializable
 data class OriginDto(
     val name: String,
     val url: String
 )
 
+@Serializable
 data class LocationDto(
     val name: String,
     val url: String

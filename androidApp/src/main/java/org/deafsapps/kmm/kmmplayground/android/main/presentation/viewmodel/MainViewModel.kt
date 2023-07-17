@@ -16,7 +16,11 @@ class MainViewModel(
 
     val characters: StateFlow<List<Character>> = savedStateHandle.getStateFlow("characters", emptyList())
 
-    fun loadCharacters() {
+    init {
+        loadCharacters()
+    }
+
+    private fun loadCharacters() {
         viewModelScope.launch {
             savedStateHandle["characters"] = charactersDataSource.getAllCharacters()
         }

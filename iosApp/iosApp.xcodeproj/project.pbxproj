@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,8 +11,27 @@
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		2D366DB36361AAC9010DF71C /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9AED0C513622A12DEF1F72 /* Pods_iosApp.framework */; };
+		6E86F5862A42E61B00D07EFC /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E86F5852A42E61B00D07EFC /* Pods_iosApp.framework */; };
+		6E86F5872A42E61B00D07EFC /* Pods_iosApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E86F5852A42E61B00D07EFC /* Pods_iosApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E86F58A2A42E61F00D07EFC /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E86F5892A42E61F00D07EFC /* Pods_iosApp.framework */; };
+		6E86F58B2A42E61F00D07EFC /* Pods_iosApp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E86F5892A42E61F00D07EFC /* Pods_iosApp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E86F5882A42E61B00D07EFC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E86F58B2A42E61F00D07EFC /* Pods_iosApp.framework in Embed Frameworks */,
+				6E86F5872A42E61B00D07EFC /* Pods_iosApp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01D1DB7B72BE1E1A9E9783C8 /* Pods-iosApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.release.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -20,6 +39,8 @@
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2152FB032600AC8F00CF470E /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		5320DA63EB0A98237D6B88BE /* Pods-iosApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosApp.debug.xcconfig"; path = "Target Support Files/Pods-iosApp/Pods-iosApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6E86F5852A42E61B00D07EFC /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E86F5892A42E61F00D07EFC /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E86F5862A42E61B00D07EFC /* Pods_iosApp.framework in Frameworks */,
+				6E86F58A2A42E61F00D07EFC /* Pods_iosApp.framework in Frameworks */,
 				2D366DB36361AAC9010DF71C /* Pods_iosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +102,8 @@
 		7FF089AF193A88F73EFA6099 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6E86F5892A42E61F00D07EFC /* Pods_iosApp.framework */,
+				6E86F5852A42E61B00D07EFC /* Pods_iosApp.framework */,
 				FD9AED0C513622A12DEF1F72 /* Pods_iosApp.framework */,
 			);
 			name = Frameworks;
@@ -90,7 +115,6 @@
 				5320DA63EB0A98237D6B88BE /* Pods-iosApp.debug.xcconfig */,
 				01D1DB7B72BE1E1A9E9783C8 /* Pods-iosApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -105,7 +129,8 @@
 				7555FF77242A565900829871 /* Sources */,
 				7555FF79242A565900829871 /* Resources */,
 				E279C631D513B83D4448A41E /* Frameworks */,
-				8028F6FE0D1A8D1978D97435 /* [CP] Embed Pods Frameworks */,
+				6E86F5882A42E61B00D07EFC /* Embed Frameworks */,
+				34594C1F72445A8FB70D2342 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,8 +147,9 @@
 		7555FF73242A565900829871 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1430;
 				ORGANIZATIONNAME = orgName;
 				TargetAttributes = {
 					7555FF7A242A565900829871 = {
@@ -162,7 +188,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8028F6FE0D1A8D1978D97435 /* [CP] Embed Pods Frameworks */ = {
+		34594C1F72445A8FB70D2342 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,6 +351,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

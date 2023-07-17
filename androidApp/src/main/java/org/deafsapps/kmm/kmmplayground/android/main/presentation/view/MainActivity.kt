@@ -1,4 +1,4 @@
-package org.deafsapps.kmm.kmmplayground.android
+package org.deafsapps.kmm.kmmplayground.android.main.presentation.view
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -9,6 +9,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import org.deafsapps.kmm.kmmplayground.Greeting
+import org.deafsapps.kmm.kmmplayground.android.MyApplicationTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

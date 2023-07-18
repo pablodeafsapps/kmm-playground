@@ -1,9 +1,5 @@
 package org.deafsapps.kmm.kmmplayground.domain.model
 
-data class Characters(
-    val results: List<Character>
-)
-
 data class Character(
     val id: Int,
     val name: String,

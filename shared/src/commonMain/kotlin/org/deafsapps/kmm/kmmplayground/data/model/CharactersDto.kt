@@ -4,8 +4,8 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class CharactersDto(
-//    val info: InfoDto,
-    val results: List<CharacterDto>
+    val info: InfoDto? = null,
+    val results: List<CharacterDto> = emptyList()
 )
 
 @Serializable
@@ -24,11 +24,12 @@ data class CharacterDto(
     val created: String
 )
 
+@Serializable
 data class InfoDto(
     val count: Int,
     val pages: Int,
-    val next: String,
-    val prev: String
+    val next: String?,
+    val prev: String?
 )
 
 @Serializable

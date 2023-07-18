@@ -4,11 +4,12 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".KmmPlaygroundApplication"
         android:allowBackup="false"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".character.presentation.view.MainActivity"
+            android:name="org.deafsapps.kmm.kmmplayground.android.AppActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

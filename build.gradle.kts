@@ -7,6 +7,10 @@ plugins {
     kotlin("plugin.serialization").version("1.8.21").apply(false)
 }
 
+repositories {
+    mavenCentral()
+}
+
 tasks.register("clean", Delete::class) {
     delete(rootProject.buildDir)
 }

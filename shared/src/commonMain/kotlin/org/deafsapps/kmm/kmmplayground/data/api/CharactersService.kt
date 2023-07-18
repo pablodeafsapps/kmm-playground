@@ -37,15 +37,15 @@ class KtorCharactersService(
         } catch (e: RedirectResponseException) {
             // 3xx - responses
             println("Error:  ${e.response.status.description}")
-            CharactersDto(results = emptyList())
+            CharactersDto()
         } catch (e: ClientRequestException) {
             // 4xx - responses
             println("Error:  ${e.response.status.description}")
-            CharactersDto(results = emptyList())
+            CharactersDto()
         } catch (e: ServerResponseException) {
             // 5xx - responses
             println("Error:  ${e.response.status.description}")
-            CharactersDto(results = emptyList())
+            CharactersDto()
         } catch (e: Exception) {
             // unknown
             println("Error:  ${e.message}")

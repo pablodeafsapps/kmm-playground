@@ -2,14 +2,12 @@ import SwiftUI
 import shared
 
 struct ContentView: View {
-
+        
 	var body: some View {
-		Text("Hello world!")
-	}
-}
-
-struct ContentView_Previews: PreviewProvider {
-	static var previews: some View {
-		ContentView()
+        let a = Greeting().greet()
+        let b = StartDiHelper().getCharacters { character, error in
+            character != nil ? print(character!) : print("nil value")
+        }
+		Text(a)
 	}
 }

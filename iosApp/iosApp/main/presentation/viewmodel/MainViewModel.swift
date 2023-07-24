@@ -18,11 +18,17 @@ class MainViewModel: CommonMainViewModel, ObservableObject {
     
     init() {
         super.init(characsDataSource: StartDiHelper().getCharactersDataSource)
-        getCharacters { [weak self] characterList, error in
-            guard let characters = characterList, !characters.isEmpty else { return }
-            DispatchQueue.main.async {
-                self?.characters = characters
-            }
+        getCharacters { [weak self] getCharactersResult, _ in
+            getCharactersResult?
+                .onSuccess(action: { chars in
+                    guard let characters = chars as? [Character] else { return }
+                    DispatchQueue.main.async {
+                        self?.characters = characters
+                    }
+                }).onFailure(action: { err in
+                    guard let error = err as? Error else { return }
+                    print(error.formattedDescription())
+                })
         }
     }
 }

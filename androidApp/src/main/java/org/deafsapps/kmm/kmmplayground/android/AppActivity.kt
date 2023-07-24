@@ -13,12 +13,12 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import org.deafsapps.kmm.kmmplayground.android.detail.presentation.view.DetailScreen
-import org.deafsapps.kmm.kmmplayground.android.main.presentation.view.MainScreen
-import org.deafsapps.kmm.kmmplayground.android.main.presentation.viewmodel.MainViewModel
+import org.deafsapps.kmm.kmmplayground.android.character.presentation.view.DetailScreen
+import org.deafsapps.kmm.kmmplayground.android.character.presentation.view.MainScreen
+import org.deafsapps.kmm.kmmplayground.android.character.presentation.viewmodel.MainViewModel
 import org.deafsapps.kmm.kmmplayground.android.navigation.Detail
 import org.deafsapps.kmm.kmmplayground.android.navigation.Main
-import org.deafsapps.kmm.kmmplayground.domain.model.Character
+import org.deafsapps.kmm.kmmplayground.character.domain.model.Character
 import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 class AppActivity : ComponentActivity() {

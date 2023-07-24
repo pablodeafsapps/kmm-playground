@@ -1,5 +1,5 @@
 package org.deafsapps.kmm.kmmplayground.android.di
 
-import org.deafsapps.kmm.kmmplayground.android.main.di.mainModule
+import org.deafsapps.kmm.kmmplayground.android.character.di.characterModule
 
-fun androidModule() = listOf(mainModule)
+fun androidModule() = listOf(characterModule)

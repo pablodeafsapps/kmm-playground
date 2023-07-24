@@ -1,3 +1,3 @@
 package org.deafsapps.kmm.kmmplayground.di
 
-fun appModule() = networkModule
+fun commonModule() = networkModule

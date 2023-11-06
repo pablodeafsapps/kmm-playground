@@ -36,6 +36,8 @@ interface CharactersService {
     suspend fun getCharactersByName(name: String): CharacterDto?
 }
 
+private const val PAGE_QUERY_KEY = "page"
+
 class KtorCharactersService(
     private val client: HttpClient
 ) : CharactersService {
@@ -50,7 +52,7 @@ class KtorCharactersService(
                     protocol = URLProtocol.HTTPS
                     host = HttpRoutes.BASE_URL
                     path(HttpRoutes.CHARACTER_PATH)
-                    parameters.append("page", page.toString())
+                    parameters.append(PAGE_QUERY_KEY, page.toString())
                 }
             }.body()
         )

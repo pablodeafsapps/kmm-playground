@@ -16,7 +16,7 @@ actual abstract class CommonMainViewModel(
         get() = characsDataSource
 
     actual suspend fun getCharacters(): Result<List<Character>, Error> =
-        charactersDataSource.getAllCharacters().mapSuccess { it.results.toBo() }
+        charactersDataSource.getAllCharacters().mapSuccess { characters -> characters.results.toBo() }
 
     fun clear() {
         onCleared()

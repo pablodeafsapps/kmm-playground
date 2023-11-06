@@ -7,7 +7,7 @@ import org.deafsapps.kmm.kmmplayground.character.domain.model.Character
 import org.deafsapps.kmm.kmmplayground.character.domain.model.Location
 import org.deafsapps.kmm.kmmplayground.character.domain.model.Origin
 
-fun List<CharacterDto>.toBo(): List<Character> = map { it.toBo() }
+fun List<CharacterDto>.toBo(): List<Character> = map { character -> character.toBo() }
 
 private fun CharacterDto.toBo(): Character = Character(
     id = id,

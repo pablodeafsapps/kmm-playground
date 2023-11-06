@@ -3,9 +3,6 @@ import shared
 
 struct ContentView: View {
         
-    @State
-    var characters: [Character] = []
-    
     @StateObject
     var contentViewModel: MainViewModel = MainViewModel()
 
